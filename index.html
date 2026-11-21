@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessCheck | Accessibility Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">✓</span>
+            AccessCheck
+        </div>
+        <span class="nav-tag">HTML Accessibility Tool</span>
+    </nav>
+
+    <main class="container">
+
+        <section class="hero">
+            <span class="hero-badge">♿ Web Accessibility</span>
+            <h1>Make your website<br><span>accessible to everyone.</span></h1>
+            <p>Analyze your HTML for common accessibility issues and
+            make your website more inclusive.</p>
+        </section>
+
+        <section class="analyzer">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Analyze HTML</h2>
+                    <p>Paste your HTML code below to begin.</p>
+                </div>
+                <span class="code-badge">HTML</span>
+            </div>
+
+            <textarea id="htmlInput"
+                placeholder="Paste your HTML code here..."></textarea>
+
+            <button id="analyzeBtn" class="analyze-btn">
+                <span>✦</span> Analyze Code
+            </button>
+
+        </section>
+
+        <section class="report">
+
+            <div class="report-heading">
+                <div>
+                    <h2>Analysis Report</h2>
+                    <p>Results from your accessibility scan</p>
+                </div>
+
+                <div id="issueCount" class="issue-count">
+                    0 Issues
+                </div>
+            </div>
+
+            <div id="results" class="results">
+                <div class="empty-state">
+                    <div class="empty-icon">⌕</div>
+                    <h3>Ready to analyze?</h3>
+                    <p>Your accessibility report will appear here
+                    after you analyze your code.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="info">
+            <div class="info-icon">💡</div>
+            <div>
+                <h3>Why accessibility matters</h3>
+                <p>Accessible websites help people with different
+                abilities navigate and use the web more easily.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>AccessCheck · Basic Accessibility Analyzer</p>
+        <p>Built to make the web more inclusive.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
